@@ -26,7 +26,7 @@ console.log(myarr.slice(1,3)); // [1,2]
 console.log(myarr);  // [0,1,2,3,4,5]
 
 console.log(myarr.splice(1,3)); //[1,2,3] //elements also removed from main array
-console.log(myarr);[0,4,5] 
+console.log(myarr);[0,4,5]; 
 
 
 
