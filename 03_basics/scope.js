@@ -37,5 +37,7 @@ if (true) {
 
 // console.log(b==c);//true
 
-
-
+//destructuring assignment
+const {name:myName} = {name:'abc'};
+console.log(name);
+  
