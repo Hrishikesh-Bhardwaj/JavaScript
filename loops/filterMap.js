@@ -1,7 +1,7 @@
 const arr = [1,2,3,4,5,6,7,8,9,10];
 
 const val = arr.filter((num) => {
-    return num>4
+    return num>4  //if scope is opened then return keyword must be use
      
 })
 // console.log(val);
@@ -19,13 +19,26 @@ const books = [
     { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
     { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
-  ];
+  ]; 
 
 
 //   let userBooks = books.filter((bk) => bk.genre === 'History')
   userBooks = books.filter((bk) => bk.publish >= 2000)
-  console.log(userBooks);
+  // console.log(userBooks);
 
 
 
+  myNum = [1,2,3,4,5,6,7,8,9,10];
+
+  // const newNums = myNum.map((num)=>num+10)
+  // console.log(newNums);
+
+
+//chaining
+ const newNums = myNum
+                .map((num) => num*10)
+                .map((num) => num*num+1 )
+                .filter((num) => num>=40)
+
+  console.log(newNums);
   
